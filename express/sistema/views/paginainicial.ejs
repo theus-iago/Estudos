@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <link rel="shortcut icon" href="/images/imagem.png" type="image/x-icon">
+    <script src="/javascripts/index.js"defer></script>
+    <title>Página Principal</title>
+</head>
+<body id="body">
+   <div class="container">
+    <h1>Bem-Vindo ao Sistema <%= a.name %>!</h1>
+       <ul>
+           <li>
+            <label for="">Nome: <%= a.name %></label> 
+           </li>
+           <li>
+            <label for="">Idade: <%= a.age %></label> 
+           </li>
+           <li>
+            <label for="">UF: <%= a.UF %></label> 
+           </li>
+           <li>
+            <label for="">Ações: <%= a.acoes %></label> 
+           </li>
+           <li>
+            <label for="">Senha: <%= a.senha %></label> 
+           </li>
+       </ul>
+   </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+puts "|==============================";
+puts "|Sistema de Cadastros em Ruby";
+puts "|==============================";
+print "|Name:";
+name = gets.chomp;
+puts "|==============================";
+print "|Age:";
+age = gets.chomp;
+puts "|==============================";
+puts "|Good Bye!";
+puts "|==============================";

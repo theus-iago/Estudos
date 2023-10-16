@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "marked-mangle": "^1.1.4"
+  }
+}

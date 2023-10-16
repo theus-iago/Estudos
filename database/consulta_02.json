@@ -1,0 +1,425 @@
+[
+  {
+    "dbName": "formulario",
+    "description": "Database",
+    "isSSH": false,
+    "isSSLOn": false,
+    "lastQuery": "SELECT *\nFROM usuarios \nLIMIT 1000",
+    "pictureUrl": "mysql",
+    "port": 3306,
+    "sshHost": "",
+    "sshPort": 0,
+    "sshUser": "",
+    "sshUsingPrivateKey": false,
+    "historyQueries": [
+      {
+        "date": "Sep 25, 2023 19:59:43",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT cpf,email from usuarios\nwhere(genero\u003d\u0027Feminino\u0027)"
+      },
+      {
+        "date": "Sep 25, 2023 19:59:31",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT cpf,email from usuarios\nwhere(genero\u003d\u0027MascULiNo\u0027)"
+      },
+      {
+        "date": "Sep 25, 2023 19:58:53",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT nome,idade from usuarios\nwhere(genero\u003d\u0027Masculino\u0027)"
+      },
+      {
+        "date": "Sep 25, 2023 19:58:45",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT nome from usuarios\nwhere(genero\u003d\u0027Masculino\u0027)"
+      },
+      {
+        "date": "Sep 25, 2023 19:57:30",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT nome,idade usuarios \nwhere(genero\u003d\u0027Masculino\u0027)"
+      },
+      {
+        "date": "Sep 25, 2023 19:57:02",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuarios \nwhere(genero\u003d\u0027Masculino\u0027)"
+      },
+      {
+        "date": "Sep 25, 2023 19:56:14",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuarios \nwhere(genero\u003d\u0027Feminino\u0027)"
+      },
+      {
+        "date": "Sep 25, 2023 19:50:49",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "create table usuarios(\nnome varchar(245),\ngenero varchar(245),\ncpf varchar(245),\nidade INT,\nemail varchar(245),\nsenha varchar(245))"
+      },
+      {
+        "date": "Sep 25, 2023 19:49:23",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "drop table usuarios"
+      },
+      {
+        "date": "Sep 25, 2023 16:03:01",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "alter table usuarios add(\ngenero varchar(245))"
+      },
+      {
+        "date": "Sep 25, 2023 16:02:24",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "add table usuarios(\ngenero varchar(245))"
+      },
+      {
+        "date": "Sep 25, 2023 16:02:17",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "add usuarios(\ngenero varchar(245))"
+      },
+      {
+        "date": "Sep 25, 2023 16:01:22",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios\nwhere(idade\u003c\u003d18)"
+      },
+      {
+        "date": "Sep 25, 2023 16:01:11",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios\nwhere(idade\u003d17)"
+      },
+      {
+        "date": "Sep 25, 2023 16:01:01",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select email from usuarios\nwhere(idade\u003d17)"
+      },
+      {
+        "date": "Sep 25, 2023 16:00:53",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select email from usuarios\nwhere(idade\u003d12)"
+      },
+      {
+        "date": "Sep 25, 2023 16:00:45",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select email from usuarios\nwhere(idade\u003d18)"
+      },
+      {
+        "date": "Sep 25, 2023 16:00:26",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select email from usuarios\nwhere(idade)"
+      },
+      {
+        "date": "Sep 25, 2023 16:00:17",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select email from usuarios\nwhere(idade) VALUES(123)"
+      },
+      {
+        "date": "Sep 25, 2023 16:00:10",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select email from usuarios\nwhere(idade) VALUES(\"123\")"
+      },
+      {
+        "date": "Sep 24, 2023 21:39:56",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select * from usuarios"
+      },
+      {
+        "date": "Sep 24, 2023 21:39:45",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select * from usuarios where(1)"
+      },
+      {
+        "date": "Sep 24, 2023 21:39:36",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select * from usuarios where(2)"
+      },
+      {
+        "date": "Sep 24, 2023 21:39:24",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select * from usuarios where(000.000-00)"
+      },
+      {
+        "date": "Sep 24, 2023 21:38:51",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios where(email)"
+      },
+      {
+        "date": "Sep 24, 2023 21:38:45",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios where(cpf)"
+      },
+      {
+        "date": "Sep 24, 2023 21:38:27",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios where(idade)"
+      },
+      {
+        "date": "Sep 24, 2023 21:38:20",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios where()"
+      },
+      {
+        "date": "Sep 24, 2023 21:38:08",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios where(Matheus Iago dos Santos Silva)"
+      },
+      {
+        "date": "Sep 24, 2023 21:37:52",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios where(nome)"
+      },
+      {
+        "date": "Sep 24, 2023 21:37:44",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select Matheus from usuarios where(nome)"
+      },
+      {
+        "date": "Sep 24, 2023 21:37:30",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios where(Matheus)"
+      },
+      {
+        "date": "Sep 24, 2023 21:37:09",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios(matheus)"
+      },
+      {
+        "date": "Sep 24, 2023 21:36:53",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios(VALUES(Matheus))"
+      },
+      {
+        "date": "Sep 23, 2023 13:31:04",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select nome from usuarios"
+      },
+      {
+        "date": "Sep 23, 2023 13:30:53",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select email from usuarios\nwhere(md@gmail.com)"
+      },
+      {
+        "date": "Sep 23, 2023 13:30:32",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select email from usuarios"
+      },
+      {
+        "date": "Sep 23, 2023 13:28:52",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuarios \nLIMIT 1000"
+      },
+      {
+        "date": "Sep 23, 2023 13:22:46",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "CREATE TABLE usuarios(\nnome varchar(245),\nidade INT,\ncpf varchar(245),\nemail varchar(245),\nsenha varchar(245))"
+      },
+      {
+        "date": "Sep 23, 2023 13:22:03",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "CREATE TABLE usuarios(\nnome varchar(245),\nidade INT,\ncpf varchar(245),\nemail varchar(245),\nsenha varchar(245)"
+      },
+      {
+        "date": "Sep 22, 2023 21:13:50",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "DROP TABLE teste"
+      },
+      {
+        "date": "Sep 22, 2023 21:13:46",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "DROP teste"
+      },
+      {
+        "date": "Sep 22, 2023 21:13:38",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "DROP usuarios"
+      },
+      {
+        "date": "Sep 22, 2023 21:13:36",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "DROP usuario"
+      },
+      {
+        "date": "Sep 22, 2023 21:13:29",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "DROP TABLE"
+      },
+      {
+        "date": "Sep 22, 2023 16:48:15",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "CREATE TABLE usuarios(nome VARCHAR(245), \nidade INT, \ncpf VARCHAR(245), \nemail VARCHAR(245), \nsenha VARCHAR(245))"
+      },
+      {
+        "date": "Sep 22, 2023 16:43:53",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "CREATE TABLE usuarios(nome varchar(245), idade INT, cpf varchar(245), email varchar(245), senha(245))"
+      },
+      {
+        "date": "Sep 22, 2023 16:41:26",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "DROP TABLE usuario"
+      },
+      {
+        "date": "Sep 20, 2023 20:18:22",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuario \nLIMIT 1000"
+      },
+      {
+        "date": "Sep 20, 2023 17:57:23",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select * from usuario"
+      },
+      {
+        "date": "Sep 20, 2023 17:57:08",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select * from formulario.usuario;"
+      },
+      {
+        "date": "Sep 20, 2023 17:57:00",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "select * from usuario;"
+      },
+      {
+        "date": "Sep 20, 2023 17:54:45",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "DROP DATABASE apache"
+      },
+      {
+        "date": "Sep 20, 2023 17:36:52",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "CREATE TABLE usuarios(nome varchar(245), idade INT, email varchar(245), senha varchar(245))"
+      },
+      {
+        "date": "Sep 20, 2023 17:36:07",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "CREATE TABLE usuario(add nome varchar(245), idade INT, email varchar(245), senha varchar(245))"
+      },
+      {
+        "date": "Sep 20, 2023 17:35:24",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "CREATE TABLE usuario add nome varchar(245), idade INT, email varchar(245), senha varchar(245)"
+      },
+      {
+        "date": "Sep 20, 2023 17:34:29",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "CREATE TABLE usuario(nome,idade,email,senha)"
+      },
+      {
+        "date": "Sep 20, 2023 17:34:15",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "CREATE TABLE usuario;"
+      },
+      {
+        "date": "Sep 20, 2023 17:33:36",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "CREATE DATABASE apache"
+      },
+      {
+        "date": "Sep 20, 2023 14:21:58",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuario"
+      },
+      {
+        "date": "Sep 20, 2023 14:21:55",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuario;"
+      },
+      {
+        "date": "Sep 20, 2023 14:21:42",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuario WHERE(email);"
+      },
+      {
+        "date": "Sep 20, 2023 14:21:33",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuario WHERE(email,senha);"
+      },
+      {
+        "date": "Sep 20, 2023 14:21:26",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuario WHERE(email,senha)"
+      },
+      {
+        "date": "Sep 20, 2023 14:21:11",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuario(email)"
+      },
+      {
+        "date": "Sep 20, 2023 14:21:05",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuario(email,senha);"
+      },
+      {
+        "date": "Sep 20, 2023 14:21:01",
+        "isAppGenerated": false,
+        "isHistory": true,
+        "statement": "SELECT *\nFROM usuario(email,senha)"
+      }
+    ],
+    "savedQueries": [],
+    "url": "192.168.18.8",
+    "user": "iago",
+    "vendor": 0,
+    "vendorEnum": "MY_SQL",
+    "vendorVersion": "MySQL / MariaDB (10.11.4-MariaDB)"
+  }
+]

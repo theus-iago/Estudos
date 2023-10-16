@@ -1,0 +1,6 @@
+print("Sistema de Cadastro com Python")
+nome = input("Nome:")
+cpf = input("\nCpf:")
+idade = input("\nIdade:")
+email = input("\nEmail:")
+print ("\nObrigado pelos seus dados!")

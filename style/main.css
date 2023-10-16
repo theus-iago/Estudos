@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(-45deg, #f0f29f, #edba90, #ef8e8e, #c9e58e);
+  background-size: 300% 300%;
+  color: white;
+  font-size: 16px;
+  height: 100vh;
+  animation: gradient 10s ease alternate-reverse infinite;
+}
+
+header {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  height: 3rem;
+  width: 100%;
+}
+
+header h1 {
+  text-align: start;
+}
+
+header span {
+  color: #5597ff;
+}

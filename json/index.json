@@ -1,0 +1,9 @@
+[{
+  "nome": "Matheus",
+  "idade": 18,
+  "ocupacoes": {
+    "estudos":"tecnologia",
+    "trabalho": null,
+    "passatempo": "series e filmes"
+  }
+}]
