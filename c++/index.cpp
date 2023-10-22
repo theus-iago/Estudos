@@ -9,6 +9,7 @@ void imc(float peso, float altura) {
 int main() {
   int op;
   float peso, altura, resultado;
+  
   do {
   std::cout<<"\n|============================="<<std::endl;
   std::cout<<"|\tCalculadora de IMC"<<std::endl;
@@ -43,7 +44,7 @@ std::cout<<"|============================="<<std::endl;
    cin >>op;
    if(op==2) {
    std::cout<<"|============================="<<std::endl;
-   std::cout<<"|Good Bye!"<<std::endl;
+   std::cout<<"|Good Bye!!"<<std::endl;
    std::cout<<"|============================="<<std::endl;
    } else {
    std::cout<<"|============================="<<std::endl;
