@@ -9,9 +9,9 @@ router.get('/novouser',function(req,res){
   res.render("novoCadastro",{})
 });
 router.post('/newuser',async (req,res)=>{
- const {name,age,UF,acoes,senha} = req.body
+ const {nome,idade,cpf,email,senha} = req.body
  const user = {
-  name,age, UF,acoes,senha
+  nome,idade, cpf,email,senha
  }
  try {
   await User.create(user)
