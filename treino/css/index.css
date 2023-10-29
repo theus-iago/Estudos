@@ -1,0 +1,51 @@
+:root {
+ --scroll-height:25px;
+}
+section {
+  font-size:1.5rem;
+  margin-inline:auto;
+  width:min(60ch, 100%);
+}
+p {
+  animation:appear 1ms ease-in-out;
+  animation-timeline:view();
+  padding-block:var(--scroll-height);
+  animation-range:cover 0% cover 50%;
+}
+.c-indicator {
+  background-color:tomato;
+  transform-origin:left;
+  height:25px;
+  inset:0;
+  position:fixed;
+  animation:scroll ease;
+  animation-timeline:scroll();
+}
+@keyframes appear {
+  from{
+    opacity:0;
+    translate: -100vh 0;
+  }
+  to{
+    opacity:1;
+    translate: 0 0;
+  }
+}
+@keyframes scroll {
+  from{
+    scale: 0 1;
+  }
+  to{
+    scale: 1 1;
+  }
+}
+@keyframes reveal {
+  from{
+    opacity:0;
+    clip-path: inset(45% 20% 45% 20%);
+  }
+  to {
+    opacity:1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
