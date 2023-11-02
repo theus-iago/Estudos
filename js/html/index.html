@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>teste</title>
+  <style>
+  * {font-family: Arial,Helvetica,Sans-Serif;}
+    body {
+      height:100vh;
+      background-color: rgb(18,2,82);
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+    }
+    #usuario {
+      background-color:rgba(0,0,0,0);
+      color:white;
+      border:none;
+      border-bottom:2px solid black;
+      margin:5px;
+      padding:3px;
+    }
+    input:focus {
+      outline:none;
+    }
+    textarea {
+      height:300px;
+      width:100%;
+      border-color:rgba(14,0,47,0);
+      background-color:rgb(14,0,47);
+      color:white;
+      margin:15px;
+      padding:3px;
+      border-radius:6px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Dados de Usuários do GitHub</h3>
+  <label for="usuario">Informe o nome de usuário:</label>
+  <input type="text" id="usuario">
+  <input type="button" value="procurar" onclick="procurar()">
+  <textarea name="frame" id="frame" cols="30" rows="10"></textarea>
+  <script>
+    async function obterDados(username) {
+ try {
+  const userData = await buscarDados(username);
+ document.querySelector("#frame").innerHTML = JSON.stringify(userData, null, 2);
+ }catch (error) {
+  console.error("Falha ao tentar obter os dados:",error);
+ }
+}
+function buscarDados(username) {
+ return new Promise((resolve,reject) => {
+  fetch(`https://api.github.com/users/${username}`)
+  .then(response => {
+   if(response.status === 200) {
+    resolve(response.json());
+   }else {
+    reject(new Error("Falha ao tentar buscar os dados!"));
+   }
+  })
+ .catch(error => {
+  reject(error);
+ });
+ });
+}
+const procurar = () => {
+setTimeout(() => {
+obterDados(document.querySelector("#usuario").value);
+},500);
+}
+  </script>
+</body>
+</html>

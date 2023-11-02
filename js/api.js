@@ -3,7 +3,7 @@ async function obterDados(username) {
   const userData = await buscarDados(username);
   console.log("Dados do usuário:",userData);
  }catch (error) {
-  console.error("Falha ao tentar obter os dados:",erro);
+  console.error("Falha ao tentar obter os dados:",error);
  }
 }
 function buscarDados(username) {
