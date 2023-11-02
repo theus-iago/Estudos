@@ -37,13 +37,27 @@
       padding:3px;
       border-radius:6px;
     }
+    #botao {
+      border:none;
+      border-radius:4px;
+      margin:5px;
+      padding:2px;
+    }
+    .botoes {
+      width:100%;
+      display:flex;
+      justify-content:space-around;
+    }
   </style>
 </head>
 <body>
   <h3>Dados de Usuários do GitHub</h3>
   <label for="usuario">Informe o nome de usuário:</label>
   <input type="text" id="usuario">
-  <input type="button" value="procurar" onclick="procurar()">
+  <div class="botoes">
+  <input type="button" value="limpar" onclick="document.querySelector('#frame').value = ''" id="botao">
+  <input type="button" value="procurar" onclick="procurar()" id="botao">
+  </div>
   <textarea name="frame" id="frame" cols="30" rows="10"></textarea>
   <script>
     async function obterDados(username) {
