@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Página Inicial</title>
+  <link rel="stylesheet" href="../style/index.css">
+  <script src="../js/back.js" defer></script>
+</head>
+<body>
+  <form action="../php/testeLogin.php" method="post">
+    <h3>Formulário de Login</h3>
+  <p>
+    <label for="email">email</label>
+    <br>
+    <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+  </p> 
+  <p>
+    <label for="senha">senha</label>
+    <br>
+    <input type="password" name="senha" id="senha" placeholder="sua senha" required>
+  </p> 
+  <div class="box">
+   <p>
+    <input type="button" id="btn" value="Voltar" onclick="home()">
+  </p>
+  <p>
+    <input type="submit" name="btn" id="btn">
+  </p>
+  </div> 
+  </form>
+</body>
+</html>
