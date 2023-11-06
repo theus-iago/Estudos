@@ -21,13 +21,12 @@ somar(5,5,soma);
 const arrow = () => {
   console.log("arrow function!");
 }
-
-//--------------×----------------//
+//--------------×---------------//
 
 /*Constructor functions*/
 function Pessoa(nome,idade) {
-  this.nome = nome;
-  this.idade = idade;
+   this.nome = nome;
+   this.idade = idade;
 }
-const pessoa1 = new Pessoa("Matheus",18);
-console.log(pessoa1);
+const pessoa[0] = new Pessoa("Matheus",18);
+//--------------×---------------//
