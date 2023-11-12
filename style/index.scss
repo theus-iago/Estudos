@@ -28,7 +28,9 @@ body {
     background-position: 0 50%;
   }
 }
-
+.login,.cadastro {
+  width:80%;
+}
 header {
   background-color: #ff3518;
   color: white;
@@ -73,7 +75,7 @@ main {
   
   .conteudo {
     background-color: white;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.454);
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.304);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     color: black;
@@ -108,9 +110,7 @@ main {
 }
 
 .footer {
-  display: flex;
-  align-items: end;
-  justify-content: center;
+  width:100%;
 }
 
 footer {
@@ -119,9 +119,10 @@ footer {
   text-align: center;
   text-shadow: none;
   font-size: 1.1em;
-  max-width: 100%;
-  padding: 16px;
-  
+  width: 100%;
+  padding: 8px;
+  position:relative;
+  top:100%;
   a {
     color: black;
     text-decoration: none;
@@ -136,27 +137,29 @@ footer {
 form {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 2px 2px 2px #00000091;
+  box-shadow: 2px 2px 2px #00000072;
   color: black;
   text-shadow: none;
-  text-align: center;
+  text-align:start;
   margin: auto;
   margin-top: 16px;
   margin-bottom: 0;
   padding: 16px;
   width: 70vw;
 }
-
-input {
+form h3 {
+  text-align:center;
+}
+input:not(#btn){
   border-width: 1px;
   border-color: black;
   border-style: solid;
   border-radius: 6px;
-  width: 70%;
-  margin: 5px;
+  margin:5px;
+  margin-left:0px;
   padding: 3px;
-  text-align: center;
-  
+  text-align:start;
+  width:100%;
   &:hover {
     border: 1px solid black;
     outline: none;
@@ -166,9 +169,12 @@ input {
 #btn {
   background-color: #2a60f8;
   border: none;
+  border-radius: 6px;
   color: white;
+  margin:5px;
   padding: 8px;
-  width: 90%;
+  width: 100%;
+  text-align:center;
 }
 
 .box {
@@ -176,13 +182,13 @@ input {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
 
 .container {
   background-color: white;
-  box-shadow: 2px 2px 2px #00000091;
+  box-shadow: 2px 2px 2px #0000006c;
   border-radius: 20px;
   height: 300px;
   width: 300px;
@@ -259,10 +265,6 @@ input {
   }
 }
 
-footer {
-  position: absolute;
-  top: 100%;
-}
 #genero {
   width:100px;
   margin-left:0;

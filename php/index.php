@@ -18,31 +18,38 @@ $logado = $_SESSION["email"];
   <link rel="stylesheet" href="../style/main.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <style>
+@keyframes gradient {
+  0%{background-position:50% 0%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:50% 0%;}
+}
 #btn {
   background-color:#5597ff;
   color:white;
   border:none;
-  border-radius:8px;
+  border-radius:6px;
   margin:5px;
-  padding:3px;
+  padding:5px;
 }
 </style>
   <script src="../js/back.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="titulo">
-    <h1><span>B</span>em-Vin<span>d</span>o!</h1>
-    </div>
+      <h2><span>S</span>ervidor <span>P</span>H<span>P</span></h2>
     <div class="botao">
       <input type="button" id="btn" onclick="back()" value="Sair">
     </div>
   </header>
   <main>
+    <p>
+      Testando Servidor
+    </p>
     <article>
-      <h2>Servidor</h2>
     </article>
   </main>
-  <footer><h3><a href="https://www.Instagram.com/iago_028">&copyIago</a></h3></footer>
+  <footer>
+    <p><a href="https://Instagram.com/iago_028" target="_blank">&copyIago</a></p>
+  </footer>
 </body>
 </html>

@@ -97,13 +97,8 @@ public class Index {
           System.out.print("|Digite a opcao:");
           op = sc.nextInt();
       System.out.println("|=========================================================");
-          if(op == 1) {
-            System.out.println("|Good Bye!");
-      System.out.println("|=========================================================");
-            op = 6;
-          }else {
-           break;
-          }
+      op = (op == 1) ? 6 :op;
+      break;
       }
     }while(op!=6);
   }
